@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>عرض الفرق - نظام البطولات</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- هنا الهيدر (القائمة العلوية) ثابت في كل الصفحات -->
+    <header>
+        <h1>نظام بطولات الألعاب الإلكترونية  </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="teams.html">الفرق</a></li>
+                <li><a href="add-team.html">إضافة فريق</a></li>
+                <li><a href="matches.html">المباريات</a></li>
+                <li><a href="results.html">النتائج</a></li>
+                <li><a href="about.html">حول المشروع</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">قائمة الفرق المشاركة</h2>
+        
+        <!-- هذا مربع البحث.. أي شيء تكتبه هنا بيتفلتر تحت بفضل كود الجافا سكربت -->
+        <div style="text-align: center; margin-bottom: 20px;">
+            <input type="text" id="teamSearch" placeholder="اكتب اسم الفريق للبحث...">
+        </div>
+
+        <!-- هنا تطلع الفرق على شكل كروت مرتبة -->
+        <div class="card-grid">
+            <!-- الكرت حق الفريق الأول -->
+            <div class="card team-card">
+                <h3> G-09  </h3>
+                <p>G-05  </p>
+                <p>العدد: 5</p>
+            </div>
+            <!-- الكرت حق الفريق الثاني -->
+            <div class="card team-card">
+                <h3>G-08 </h3>
+                <p>القائد: عهد</p>
+                <p>العدد: 4</p>
+            </div>
+            <!-- الكرت حق الفريق الثالث -->
+            <div class="card team-card">
+                <h3>المحترفون</h3>
+                <p>القائد: لنا</p>
+                <p>العدد: 5</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- نهاية الصفحة -->
+    <footer>
+       
+    </footer>
+
+    <!-- ربط ملف البرمجة عشان يشتغل البحث -->
+    <script src="js/script.js"></script>
+</body>
+</html>

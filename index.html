@@ -1,0 +1,94 @@
+<!-- الصفحة الرئيسية للمشروع -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>موقع إدارة البطولات - الرئيسية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- هذي بداية الصفحة، فيها الروابط الأساسية للموقع -->
+    <header>
+        <h1>نظام بطولات العاب الالكترونية</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="teams.html">الفرق</a></li>
+                <li><a href="add-team.html">إضافة فريق</a></li>
+                <li><a href="matches.html">المباريات</a></li>
+                <li><a href="results.html">النتائج</a></li>
+                <li><a href="about.html">حول المشروع</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- هنا السلايدر (الصور اللي تتحرك) اللي سويناها عشان الموقع يطلع فخم -->
+    <div class="slider-container">
+        <div class="slider">
+            <!-- الصورة الأولى في السلايدر -->
+            <div class="slide active">
+                <img src="images/slide1.png" alt="Gaming Setup">
+                <div class="slide-content">
+                    <h2>أهلاً بكم في نظام البطولات</h2>
+                    <p>أفضل منصة لتنظيم بطولات الألعاب الإلكترونية</p>
+                </div>
+            </div>
+            <!-- الصورة الثانية -->
+            <div class="slide">
+                <img src="images/slide2.png" alt="Esports Arena">
+                <div class="slide-content">
+                    <h2>جوائز كبرى ومنافسات قوية</h2>
+                    <p>انضم الآن وكن بطل البطولة القادم</p>
+                </div>
+            </div>
+            <!-- الصورة الثالثة -->
+            <div class="slide">
+                <img src="images/banner.png" alt="Gaming Banner">
+                <div class="slide-content">
+                    <h2>تابع النتائج والمباريات</h2>
+                    <p>تغطية شاملة لجميع المباريات والنتائج فوراً</p>
+                </div>
+            </div>
+        </div>
+        <!-- أزرار التنقل يمين ويسار حقت السلايدر -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- هنا الأقسام الأساسية للموقع (كروت مرتبة) -->
+    <div class="container">
+        <h2 class="section-title">أقسام الموقع</h2>
+        <div class="card-grid">
+            <!-- كرت قسم الفرق -->
+            <div class="card">
+                <h3>قسم  الافرقه المشاركه</h3>
+                <p> عرض الفرق المشاركه</p>
+                <a href="teams.html">اضغط هنا</a>
+            </div>
+            <!-- كرت قسم المباريات -->
+            <div class="card">
+                <h3>قسم المباريات</h3>
+                <p> تعرف متى وقت مباراتك</p>
+                <a href="matches.html">اضغط هنا</a>
+            </div>
+            <!-- كرت قسم النتائج -->
+            <div class="card">
+                <h3>قسم النتائج</h3>
+                <p> تقدر تعرف مين اللي فاز</p>
+                <a href="results.html">اضغط هنا</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- نهاية الصفحة (الفووتر) اللي فيها الحقوق -->
+    <footer>
+
+    </footer>
+
+    <!-- هذا السطر يربط الصفحة بملف الجافا سكربت عشان تشتغل الحركات -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
